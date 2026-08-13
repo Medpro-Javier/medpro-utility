@@ -1,0 +1,173 @@
+{
+  "MedProPresetStandard": {
+    "content": "Standard workstation",
+    "description": "The MedPro base build. Everything a staff machine gets: privacy and performance tweaks, the standard app suite, and consumer bloatware removed.",
+    "tweaks": [
+      "MedProTweaksTelemetry",
+      "MedProTweaksActivity",
+      "MedProTweaksConsumerFeatures",
+      "MedProTweaksSuggestions",
+      "MedProTweaksDeliveryOptimization",
+      "MedProTweaksLocation",
+      "MedProTweaksWidgets",
+      "MedProTweaksCopilot",
+      "MedProTweaksWPBT",
+      "MedProTweaksDeviceMetadata",
+      "MedProTweaksSyncNotifications",
+      "MedProTweaksBackgroundApps",
+      "MedProTweaksServices",
+      "MedProTweaksEndTask",
+      "MedProTweaksLongPaths",
+      "MedProTweaksVerboseLogon",
+      "MedProTweaksDetailedBSoD",
+      "MedProTweaksShowFileExtensions",
+      "MedProTweaksTaskbarLeft",
+      "MedProTweaksSearchIconOnly",
+      "MedProTweaksDisableBingSearch",
+      "MedProTweaksStartRecommendations",
+      "MedProTweaksClassicContextMenu",
+      "MedProTweaksNumLock",
+      "MedProTweaksStickyKeys"
+    ],
+    "applications": [
+      "MedProInstallChrome",
+      "MedProInstallOffice",
+      "MedProInstallTeams",
+      "MedProInstallRingCentral",
+      "MedProInstallRicohPrinters",
+      "MedProInstallKaseyaAgent"
+    ],
+    "debloat": [
+      "MedProDebloatXbox",
+      "MedProDebloatGames",
+      "MedProDebloatBing",
+      "MedProDebloatSocial",
+      "MedProDebloatMedia",
+      "MedProDebloatMisc",
+      "MedProDebloatCopilot",
+      "MedProDebloatWidgets"
+    ]
+  },
+
+  "MedProPresetTechnician": {
+    "content": "IT technician workstation",
+    "description": "The standard build plus the tools MedPro IT needs: VS Code, PowerToys, Notepad++, 7-Zip, hidden files shown, and the unsigned RDP prompt suppressed.",
+    "tweaks": [
+      "MedProTweaksTelemetry",
+      "MedProTweaksActivity",
+      "MedProTweaksConsumerFeatures",
+      "MedProTweaksSuggestions",
+      "MedProTweaksDeliveryOptimization",
+      "MedProTweaksWidgets",
+      "MedProTweaksCopilot",
+      "MedProTweaksWPBT",
+      "MedProTweaksDeviceMetadata",
+      "MedProTweaksSyncNotifications",
+      "MedProTweaksBackgroundApps",
+      "MedProTweaksServices",
+      "MedProTweaksEndTask",
+      "MedProTweaksLongPaths",
+      "MedProTweaksVerboseLogon",
+      "MedProTweaksDetailedBSoD",
+      "MedProTweaksShowFileExtensions",
+      "MedProTweaksShowHiddenFiles",
+      "MedProTweaksTaskbarLeft",
+      "MedProTweaksSearchIconOnly",
+      "MedProTweaksDisableBingSearch",
+      "MedProTweaksStartRecommendations",
+      "MedProTweaksClassicContextMenu",
+      "MedProTweaksNumLock",
+      "MedProTweaksStickyKeys",
+      "MedProTweaksUnsignedRdp"
+    ],
+    "applications": [
+      "MedProInstallChrome",
+      "MedProInstallOffice",
+      "MedProInstallTeams",
+      "MedProInstallRingCentral",
+      "MedProInstallRicohPrinters",
+      "MedProInstallKaseyaAgent",
+      "MedProInstall7Zip",
+      "MedProInstallNotepadPlusPlus",
+      "MedProInstallPowerToys",
+      "MedProInstallVSCode"
+    ],
+    "debloat": [
+      "MedProDebloatXbox",
+      "MedProDebloatGames",
+      "MedProDebloatBing",
+      "MedProDebloatSocial",
+      "MedProDebloatMedia",
+      "MedProDebloatMisc",
+      "MedProDebloatCopilot",
+      "MedProDebloatWidgets"
+    ]
+  },
+
+  "MedProPresetPrivacyOnly": {
+    "content": "Privacy only",
+    "description": "Telemetry, tracking, and AI data collection off, and nothing else. For a machine already in service where removing apps or changing the interface would disrupt someone mid-shift.",
+    "tweaks": [
+      "MedProTweaksTelemetry",
+      "MedProTweaksActivity",
+      "MedProTweaksConsumerFeatures",
+      "MedProTweaksSuggestions",
+      "MedProTweaksDeliveryOptimization",
+      "MedProTweaksLocation",
+      "MedProTweaksCopilot",
+      "MedProTweaksDeviceMetadata",
+      "MedProTweaksSyncNotifications"
+    ],
+    "applications": [],
+    "debloat": []
+  },
+
+  "MedProPresetLaptop": {
+    "content": "Laptop",
+    "description": "The standard build minus anything that hurts a portable machine. Hibernation and Fast Startup stay on, and the display and sleep timeouts are the ones a laptop needs.",
+    "tweaks": [
+      "MedProTweaksTelemetry",
+      "MedProTweaksActivity",
+      "MedProTweaksConsumerFeatures",
+      "MedProTweaksSuggestions",
+      "MedProTweaksDeliveryOptimization",
+      "MedProTweaksLocation",
+      "MedProTweaksWidgets",
+      "MedProTweaksCopilot",
+      "MedProTweaksWPBT",
+      "MedProTweaksDeviceMetadata",
+      "MedProTweaksSyncNotifications",
+      "MedProTweaksBackgroundApps",
+      "MedProTweaksServices",
+      "MedProTweaksEndTask",
+      "MedProTweaksLongPaths",
+      "MedProTweaksVerboseLogon",
+      "MedProTweaksDetailedBSoD",
+      "MedProTweaksShowFileExtensions",
+      "MedProTweaksTaskbarLeft",
+      "MedProTweaksSearchIconOnly",
+      "MedProTweaksDisableBingSearch",
+      "MedProTweaksStartRecommendations",
+      "MedProTweaksClassicContextMenu",
+      "MedProTweaksStickyKeys"
+    ],
+    "applications": [
+      "MedProInstallChrome",
+      "MedProInstallOffice",
+      "MedProInstallTeams",
+      "MedProInstallRingCentral",
+      "MedProInstallRicohPrinters",
+      "MedProInstallKaseyaAgent"
+    ],
+    "debloat": [
+      "MedProDebloatXbox",
+      "MedProDebloatGames",
+      "MedProDebloatBing",
+      "MedProDebloatSocial",
+      "MedProDebloatMedia",
+      "MedProDebloatMisc",
+      "MedProDebloatCopilot",
+      "MedProDebloatWidgets"
+    ]
+  }
+}

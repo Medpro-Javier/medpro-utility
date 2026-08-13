@@ -1,0 +1,22 @@
+# Build scratch
+build/
+*.log
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editor
+.vs/
+.vscode/
+.claude/settings.local.json
+*.suo
+*.user
+
+# Never commit downloaded installers or captured credentials
+cache/
+*.msi
+*.exe
+*.msix
+*.msixbundle
+creds.*

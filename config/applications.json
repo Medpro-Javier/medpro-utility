@@ -1,0 +1,100 @@
+{
+  "MedProInstallChrome": {
+    "content": "Google Chrome",
+    "category": "MedPro Standard Build",
+    "categoryNote": "The software every MedPro workstation gets. Sources come from MedProUtil_Software.xlsx.",
+    "description": "Google Chrome, enterprise MSI. Installs machine-wide for every user on the PC.",
+    "url": "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi",
+    "type": "msi",
+    "args": "/qn /norestart",
+    "winget": "Google.Chrome",
+    "detect": "%ProgramFiles%\\Google\\Chrome\\Application\\chrome.exe",
+    "standard": true
+  },
+
+  "MedProInstallOffice": {
+    "content": "Microsoft Office 365",
+    "category": "MedPro Standard Build",
+    "description": "Microsoft 365 Apps via the Click-to-Run bootstrapper. This installer does NOT run silently - it shows Microsoft's own installer UI and a technician has to stay at the machine. To make it unattended, switch this entry to the Office Deployment Tool with a MedPro configuration XML.",
+    "url": "https://go.microsoft.com/fwlink/?linkid=2264705&clcid=0x409&culture=en-us&country=us",
+    "type": "exe",
+    "args": "",
+    "interactive": true,
+    "detect": "%ProgramFiles%\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+    "standard": true
+  },
+
+  "MedProInstallTeams": {
+    "content": "Microsoft Teams",
+    "category": "MedPro Standard Build",
+    "description": "New Teams, provisioned machine-wide with teamsbootstrapper.exe -p so every user profile gets it. Microsoft's supported deployment method; it fetches the current version itself, so this link does not go stale.",
+    "url": "https://go.microsoft.com/fwlink/?linkid=2243204",
+    "type": "exe",
+    "args": "-p",
+    "standard": true
+  },
+
+  "MedProInstallRingCentral": {
+    "content": "RingCentral",
+    "category": "MedPro Standard Build",
+    "description": "RingCentral desktop app for MedPro phone and messaging. Large download, around 415 MB.",
+    "url": "https://app.ringcentral.com/download/squirrel-windows/RingCentral-Setup.msi",
+    "type": "msi",
+    "args": "/qn /norestart",
+    "standard": true
+  },
+
+  "MedProInstallRicohPrinters": {
+    "content": "Ricoh Printers",
+    "category": "MedPro Standard Build",
+    "description": "All MedPro Ricoh printer drivers and queues, from \\\\med-dc-01\\Install. Around 284 MB, copied locally before running. Needs network access to the share.",
+    "path": "\\\\med-dc-01\\Install\\Ricoh\\All_Ricoh_Printers.exe",
+    "type": "exe",
+    "args": "/S",
+    "standard": true
+  },
+
+  "MedProInstallKaseyaAgent": {
+    "content": "Kaseya Agent",
+    "category": "MedPro Standard Build",
+    "description": "Kaseya VSA management agent for MedPro workstations, from \\\\med-dc-01\\Install. Install this on every machine - it is how IT manages the PC afterwards.",
+    "path": "\\\\med-dc-01\\Install\\KASEYA INSTALLER FOR MEDPRO\\Kaseya_Medpro_Workstations_VSA08.exe",
+    "type": "exe",
+    "args": "/S",
+    "standard": true
+  },
+
+  "MedProInstall7Zip": {
+    "content": "7-Zip",
+    "category": "IT Technician Tools",
+    "categoryNote": "Not part of the standard build. These are for MedPro IT machines and are only selected by the IT technician preset.",
+    "description": "Archive tool. The direct link is version-pinned, so it falls back to winget once 7-Zip publishes a newer build.",
+    "url": "https://www.7-zip.org/a/7z2408-x64.exe",
+    "type": "exe",
+    "args": "/S",
+    "winget": "7zip.7zip",
+    "detect": "%ProgramFiles%\\7-Zip\\7z.exe"
+  },
+
+  "MedProInstallNotepadPlusPlus": {
+    "content": "Notepad++",
+    "category": "IT Technician Tools",
+    "description": "Text editor for logs, CSVs, and config files.",
+    "winget": "Notepad++.Notepad++",
+    "detect": "%ProgramFiles%\\Notepad++\\notepad++.exe"
+  },
+
+  "MedProInstallPowerToys": {
+    "content": "Microsoft PowerToys",
+    "category": "IT Technician Tools",
+    "description": "FancyZones, PowerRename, and Text Extractor.",
+    "winget": "Microsoft.PowerToys"
+  },
+
+  "MedProInstallVSCode": {
+    "content": "Visual Studio Code",
+    "category": "IT Technician Tools",
+    "description": "Editor for scripts and configuration.",
+    "winget": "Microsoft.VisualStudioCode"
+  }
+}

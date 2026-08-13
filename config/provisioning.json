@@ -1,0 +1,24 @@
+{
+  "_comment": "MedPro site settings for the Provisioning tab. There is deliberately no naming standard here - the tab shows the machine's current name and lets a technician edit it, with only Windows' own rules enforced.",
+
+  "domain": {
+    "configured": true,
+    "name": "medpro.local",
+    "ouPath": "OU=MedPro Computers,DC=medpro,DC=local"
+  },
+
+  "power": {
+    "planName": "Balanced",
+    "planGuid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "monitorTimeoutAC": 15,
+    "monitorTimeoutDC": 10,
+    "standbyTimeoutAC": 60,
+    "standbyTimeoutDC": 30,
+    "hibernateTimeoutAC": 0,
+    "hibernateTimeoutDC": 0,
+    "lidActionAC": 0,
+    "lidActionDC": 1,
+    "screenLockMinutes": 15,
+    "description": "Balanced plan, display off after 15 minutes on mains, sleep after an hour, laptop lid sleeps on battery only. The screen locks after 15 minutes and requires a password, which is the control that matters on a machine handling candidate and client records."
+  }
+}

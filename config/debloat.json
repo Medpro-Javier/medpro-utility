@@ -1,0 +1,228 @@
+{
+  "keepList": [
+    "Microsoft.DesktopAppInstaller",
+    "Microsoft.WindowsStore",
+    "Microsoft.StorePurchaseApp",
+    "Microsoft.SecHealthUI",
+    "Microsoft.WindowsTerminal",
+    "Microsoft.WindowsNotepad",
+    "Microsoft.Paint",
+    "Microsoft.ScreenSketch",
+    "Microsoft.WindowsCalculator",
+    "Microsoft.WindowsCamera",
+    "Microsoft.Windows.Photos",
+    "Microsoft.MicrosoftStickyNotes",
+    "Microsoft.CompanyPortal",
+    "MicrosoftCorporationII.QuickAssist",
+    "Microsoft.RemoteDesktop",
+    "MSTeams",
+    "Microsoft.Office.*",
+    "Microsoft.OneDriveSync",
+    "Microsoft.UI.Xaml.*",
+    "Microsoft.VCLibs.*",
+    "Microsoft.NET.Native.*",
+    "Microsoft.Services.Store.Engagement",
+    "Microsoft.WindowsAppRuntime.*",
+    "Microsoft.WebpImageExtension",
+    "Microsoft.HEIFImageExtension",
+    "Microsoft.RawImageExtension",
+    "Microsoft.AV1VideoExtension",
+    "Microsoft.HEVCVideoExtension",
+    "Microsoft.VP9VideoExtensions",
+    "Microsoft.WebMediaExtensions",
+    "Microsoft.MicrosoftEdge.*",
+    "Microsoft.Winget.*",
+    "Windows.*",
+    "MicrosoftWindows.Client.CBS",
+    "MicrosoftWindows.Client.Core",
+    "MicrosoftWindows.Client.FileExp",
+    "MicrosoftWindows.UndockedDevKit",
+    "Microsoft.AAD.BrokerPlugin",
+    "Microsoft.AccountsControl",
+    "Microsoft.CredDialogHost",
+    "Microsoft.ECApp",
+    "Microsoft.LockApp",
+    "Microsoft.Windows.CloudExperienceHost",
+    "Microsoft.Windows.ContentDeliveryManager",
+    "Microsoft.Windows.ShellExperienceHost",
+    "Microsoft.Windows.StartMenuExperienceHost",
+    "Microsoft.Windows.SecureAssessmentBrowser",
+    "Microsoft.Windows.PeopleExperienceHost",
+    "Microsoft.Windows.Search",
+    "Microsoft.XboxGameCallableUI"
+  ],
+
+  "groups": {
+    "MedProDebloatXbox": {
+      "content": "Xbox and gaming",
+      "description": "Xbox Console Companion, Game Bar, Game Speech Window, and the Xbox Game Overlay. None of these have a role on a staffing workstation.",
+      "category": "Consumer apps",
+      "categoryNote": "Removes the app for every user on this machine and deprovisions it so new profiles do not get it either.",
+      "recommended": true,
+      "packages": [
+        "Microsoft.XboxApp",
+        "Microsoft.XboxGameOverlay",
+        "Microsoft.XboxGamingOverlay",
+        "Microsoft.XboxIdentityProvider",
+        "Microsoft.XboxSpeechToTextOverlay",
+        "Microsoft.Xbox.TCUI",
+        "Microsoft.GamingApp",
+        "Microsoft.GamingServices"
+      ]
+    },
+
+    "MedProDebloatGames": {
+      "content": "Bundled games",
+      "description": "Microsoft Solitaire Collection, Mahjong, Bubble Witch, and the other titles Windows installs on first sign-in.",
+      "category": "Consumer apps",
+      "recommended": true,
+      "packages": [
+        "Microsoft.MicrosoftSolitaireCollection",
+        "Microsoft.MinecraftUWP",
+        "king.com.*",
+        "*CandyCrush*",
+        "*BubbleWitch*",
+        "*Royal Revolt*",
+        "*Dolby*",
+        "*Disney*",
+        "*Spotify*",
+        "*Twitter*",
+        "*TikTok*",
+        "*Facebook*",
+        "*Instagram*",
+        "*LinkedInforWindows*"
+      ]
+    },
+
+    "MedProDebloatBing": {
+      "content": "Bing news, weather, and finance",
+      "description": "The Bing-backed News, Weather, Finance, and Sports apps and their live tiles.",
+      "category": "Consumer apps",
+      "recommended": true,
+      "packages": [
+        "Microsoft.BingNews",
+        "Microsoft.BingWeather",
+        "Microsoft.BingFinance",
+        "Microsoft.BingSports",
+        "Microsoft.BingSearch",
+        "Microsoft.BingTravel",
+        "Microsoft.BingHealthAndFitness",
+        "Microsoft.BingFoodAndDrink"
+      ]
+    },
+
+    "MedProDebloatSocial": {
+      "content": "Skype, Phone Link, and consumer Teams",
+      "description": "Consumer communication apps. Does not touch the work version of Teams, which is kept.",
+      "category": "Consumer apps",
+      "recommended": true,
+      "packages": [
+        "Microsoft.SkypeApp",
+        "Microsoft.YourPhone",
+        "Microsoft.People",
+        "MicrosoftTeams",
+        "Microsoft.Messaging",
+        "Microsoft.OneConnect"
+      ]
+    },
+
+    "MedProDebloatMedia": {
+      "content": "Clipchamp, Media Player, and Movies",
+      "description": "Clipchamp video editor, the Groove-derived Media Player, and Films and TV. Remove unless a MedPro role needs video editing on the machine.",
+      "category": "Consumer apps",
+      "recommended": true,
+      "packages": [
+        "Clipchamp.Clipchamp",
+        "Microsoft.ZuneMusic",
+        "Microsoft.ZuneVideo"
+      ]
+    },
+
+    "MedProDebloatMisc": {
+      "content": "Tips, Maps, Feedback Hub, and 3D apps",
+      "description": "Get Started, Get Help, Maps, Feedback Hub, Alarms and Clock, To Do, Mixed Reality Portal, 3D Builder, and Print 3D.",
+      "category": "Consumer apps",
+      "recommended": true,
+      "packages": [
+        "Microsoft.Getstarted",
+        "Microsoft.GetHelp",
+        "Microsoft.WindowsMaps",
+        "Microsoft.WindowsFeedbackHub",
+        "Microsoft.WindowsAlarms",
+        "Microsoft.Todos",
+        "Microsoft.MixedReality.Portal",
+        "Microsoft.3DBuilder",
+        "Microsoft.Print3D",
+        "Microsoft.Microsoft3DViewer",
+        "Microsoft.WindowsSoundRecorder",
+        "Microsoft.PowerAutomateDesktop",
+        "Microsoft.Wallet",
+        "Microsoft.WindowsPhone"
+      ]
+    },
+
+    "MedProDebloatCopilot": {
+      "content": "Copilot and Recall",
+      "description": "Removes the Copilot app packages. Pair this with the Copilot and Recall tweak, which blocks them by policy so Windows cannot reinstall them.",
+      "category": "AI and Widgets",
+      "categoryNote": "Windows reinstalls some of these on feature updates. The matching policy tweaks on the Tweaks tab are what make the removal stick.",
+      "recommended": true,
+      "packages": [
+        "Microsoft.Copilot",
+        "Microsoft.Windows.Ai.Copilot.Provider",
+        "MicrosoftWindows.Client.CoPilot",
+        "Microsoft.MicrosoftOfficeHub"
+      ]
+    },
+
+    "MedProDebloatWidgets": {
+      "content": "Widgets board",
+      "description": "The Windows Web Experience Pack that powers the Widgets panel. Pair with the Widgets tweak on the Tweaks tab.",
+      "category": "AI and Widgets",
+      "recommended": true,
+      "packages": [
+        "MicrosoftWindows.Client.WebExperience"
+      ]
+    },
+
+    "MedProDebloatDevHome": {
+      "content": "Dev Home and Outlook (new)",
+      "description": "Dev Home and the new Outlook for Windows preview app. Leave Outlook alone if MedPro has moved staff to the new client.",
+      "category": "AI and Widgets",
+      "caution": true,
+      "packages": [
+        "Microsoft.Windows.DevHome",
+        "Microsoft.OutlookForWindows"
+      ]
+    },
+
+    "MedProDebloatOEM": {
+      "content": "OEM manufacturer bloat",
+      "description": "Consumer software Dell, HP, and Lenovo preinstall on business machines. Support and driver-update utilities are matched loosely, so check the log to confirm nothing MedPro relies on was removed.",
+      "category": "Manufacturer",
+      "categoryNote": "Only useful on a machine imaged from an OEM factory image. Harmless on a clean MedPro image, where none of these exist.",
+      "caution": true,
+      "packages": [
+        "*McAfee*",
+        "*Norton*",
+        "*Booking.com*",
+        "*Amazon.com.Amazon*",
+        "*ACGMediaPlayer*",
+        "*DellCustomerConnect*",
+        "*DellDigitalDelivery*",
+        "*DellSupportAssistforPCs*",
+        "*HPJumpStart*",
+        "*HPPCHardwareDiagnostics*",
+        "*HPPowerManager*",
+        "*HPPrivacySettings*",
+        "*HPQuickDrop*",
+        "*HPSupportAssistant*",
+        "*HPSystemInformation*",
+        "*LenovoCompanion*",
+        "*LenovoSettings*",
+        "*LenovoUtility*",
+        "*E046963F.LenovoCompanion*"
+      ]
+    }
+  }
+}
